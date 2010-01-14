@@ -14,20 +14,28 @@ Add your content here.  Format your content with:
 
 I assume you have the Kettle folder installed on your file system.
 
-==Step 1==
+==Step 1 - download and install==
 
 Now, download the AlfrescoPlugin.tar.gz archive from this web-site home page and extract it into this folder:
 
-../*<kettle root>*/plugins/steps
+                          ../*<kettle root>*/plugins/steps
 
 E.g.: c:/Kettle/plugins/steps
 
 After archive extraction you should have a path like this:
 
-../*<kettle root>*/plugins/steps/*AlfrescoPlugin*
+                  ../*<kettle root>*/plugins/steps/*AlfrescoPlugin*
 
 and into the AlfrescoPlugin folder you should have these files:
   * alfrescoicon.png
   * alfrescoplugin.jar
   * plugin.properties
   * plugin.xml
+
+==Step 2 - plugin.properties==
+
+I've developed the plugin to be used with an Alfresco Custom Content-Model. As you know well, a custom content-model is a custom entity used build documents with specific metadata.
+For example, you may need to build documents into Alfresco that identifies a car. A car has some specific characteristics and it's very useful to define them as document metadata, specially to be able to perform useful research into Alfresco.
+
+The only file you have to configure is the *plugin.properties*.
+This file contains some plugin properties regarding the Alfresco repository and the Alfresco Custom Content model you want to use.
