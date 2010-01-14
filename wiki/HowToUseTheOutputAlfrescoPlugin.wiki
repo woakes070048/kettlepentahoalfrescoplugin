@@ -1,0 +1,8 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+The Output Alfresco Plugin is very simple to use. The only thing you have to pay attention are the names of the input fields to the plugin. These fields must have the same name (case sensitive) of the metadata you have defined into the Alfresco Custom Content-Model.
+
+
+= Details =
