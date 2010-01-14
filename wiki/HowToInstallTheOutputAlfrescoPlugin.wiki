@@ -14,14 +14,20 @@ Add your content here.  Format your content with:
 
 I assume you have the Kettle folder installed on your file system.
 
-*Step 1*
+==Step 1==
 
 Now, download the AlfrescoPlugin.tar.gz archive from this web-site home page and extract it into this folder:
 
-../<kettle root>/plugins/steps
+../*<kettle root>*/plugins/steps
 
 E.g.: c:/Kettle/plugins/steps
 
 After archive extraction you should have a path like this:
 
-../<kettle root>/plugins/steps/*AlfrescoPlugin*
+../*<kettle root>*/plugins/steps/*AlfrescoPlugin*
+
+and into the AlfrescoPlugin folder you should have these files:
+* alfrescoicon.png
+* alfrescoplugin.jar
+* plugin.properties
+* plugin.xml
