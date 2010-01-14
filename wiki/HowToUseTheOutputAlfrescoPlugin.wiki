@@ -6,3 +6,7 @@ The Output Alfresco Plugin is very simple to use. The only thing you have to pay
 
 
 = Details =
+
+Let's suppose to define a Kettle Transformation with two simple steps:
+  * An Input Table
+  * The Alfresco Plugin
