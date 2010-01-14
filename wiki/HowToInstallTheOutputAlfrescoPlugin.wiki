@@ -49,26 +49,34 @@ This file contains some plugin properties regarding the Alfresco repository and 
   * *alfresco.custom.property.doc.content*
 This property value is the step input field from which the plugin will read the content to be filled into document objects loaded into Alfresco repository.
 
-  * alfresco.loading.path
+  * *alfresco.loading.path*
 This property value is the path of the Alfresco repository Space (folder) into which you want to load the documents.
 
-  * alfresco.endpoint.address
+  * *alfresco.endpoint.address*
 This property value represent the Alfresco API endpoint url; usually *http\://localhost\:8080/alfresco/api*
 
-  * alfresco.custom.property.title
+  * *alfresco.custom.property.title*
 This property specifies the step input field to be used to fille the Alfresco Document Title metadata.
 
-  * alfresco.custom.property.primarykey
+  * *alfresco.custom.property.primarykey*
 This property specifies the Alfresco custom content-Model metadata to be used to distinguish unequivocally a Document loaded into Alfresco. Indeed, the Alfresco plugin is able to control if a Document already exist into a specified path into Alfresco Repository through the primaryKey property.
 
-  * alfresco.custom.property.doc.description=oggetto
+  * *alfresco.custom.property.doc.description*
+This property specifies which step input field is to be used as description for Alfresco Document.
 
-  * alfresco.content.username=admin
+  * *alfresco.content.username=admin*
+The alfresco Content username.
 
-  * alfresco.custom.namespace.url=http\://www.sibecs.com/model/content/1.0
+  * *alfresco.custom.namespace.url*
+The alfresco Custom Content-Model namespace.
+E.g.: htt://www.mynamespace.it/model/content/1.0
 
-  * alfresco.custom.content.type=ritrovamento
+  * *alfresco.custom.content.type=ritrovamento*
+The Alfresco Custom Content-Model name.
+E.g.: car
 
-  * alfresco.content.password=admin
+  * *alfresco.content.password=admin*
+The Alfresco Content password.
 
-  * cms.type=alfresco
+  * *cms.type=alfresco*
+The CMS type. Now only alfresco is supported by plugin, then the value of this property will be: `alfresco`.
