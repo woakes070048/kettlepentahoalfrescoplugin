@@ -27,7 +27,7 @@ After archive extraction you should have a path like this:
 ../*<kettle root>*/plugins/steps/*AlfrescoPlugin*
 
 and into the AlfrescoPlugin folder you should have these files:
-* alfrescoicon.png
-* alfrescoplugin.jar
-* plugin.properties
-* plugin.xml
+  * alfrescoicon.png
+  * alfrescoplugin.jar
+  * plugin.properties
+  * plugin.xml
