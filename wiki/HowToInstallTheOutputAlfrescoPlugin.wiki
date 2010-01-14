@@ -16,7 +16,7 @@ I assume you have the Kettle folder installed on your file system.
 
 ==Step 1 - download and install==
 
-Now, download the AlfrescoPlugin.tar.gz archive from this web-site home page and extract it into this folder:
+Now, download the *AlfrescoPlugin.tar.gz* archive from this web-site home page and extract it into this folder:
 
                           ../*<kettle root>*/plugins/steps
 
@@ -46,15 +46,20 @@ Then let's assume you have defined and configured the Custom Content-Model into 
 Now, the only file you have to configure is the *plugin.properties*.
 
 This file contains some plugin properties regarding the Alfresco repository and the Alfresco Custom Content-Model you want to use:
-  * alfresco.custom.property.doc.content=NOTE_RILEVAMENTO
+  * *alfresco.custom.property.doc.content*
+This property value is the step input field from which the plugin will read the content to be filled into document objects loaded into Alfresco repository.
 
-  * alfresco.loading.path=/app\:company_home/app\:user_homes/cm\:SIBECS/cm\:Ritrovamenti
+  * alfresco.loading.path
+This property value is the path of the Alfresco repository Space (folder) into which you want to load the documents.
 
-  * alfresco.endpoint.address=http\://localhost\:8080/alfresco/api
+  * alfresco.endpoint.address
+This property value represent the Alfresco API endpoint url; usually *http\://localhost\:8080/alfresco/api*
 
-  * alfresco.custom.property.title=oggetto
+  * alfresco.custom.property.title
+This property specifies the step input field to be used to fille the Alfresco Document Title metadata.
 
-  * alfresco.custom.property.primarykey=codice
+  * alfresco.custom.property.primarykey
+This property specifies the Alfresco custom content-Model metadata to be used to distinguish unequivocally a Document loaded into Alfresco. Indeed, the Alfresco plugin is able to control if a Document already exist into a specified path into Alfresco Repository through the primaryKey property.
 
   * alfresco.custom.property.doc.description=oggetto
 
