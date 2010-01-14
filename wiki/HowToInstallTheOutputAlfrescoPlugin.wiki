@@ -1,0 +1,27 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
+I assume you have the Kettle folder installed on your file system.
+
+*Step 1*
+
+Now, download the AlfrescoPlugin.tar.gz archive from this web-site home page and extract it into this folder:
+
+../<kettle root>/plugins/steps
+
+E.g.: c:/Kettle/plugins/steps
+
+After archive extraction you should have a path like this:
+
+../<kettle root>/plugins/steps/*AlfrescoPlugin*
