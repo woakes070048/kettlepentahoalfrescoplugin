@@ -1,4 +1,5 @@
 #summary One-sentence summary of this page.
+#labels Phase-Deploy
 
 = Introduction =
 
@@ -53,7 +54,7 @@ This property value is the step input field from which the plugin will read the 
 This property value is the path of the Alfresco repository Space (folder) into which you want to load the documents.
 
   * *alfresco.endpoint.address*
-This property value represent the Alfresco API endpoint url; usually *http\://localhost\:8080/alfresco/api*
+This property value represent the Alfresco API endpoint url; usually *http://localhost\:8080/alfresco/api*
 
   * *alfresco.custom.property.title*
 This property specifies the step input field to be used to fille the Alfresco Document Title metadata.
@@ -80,3 +81,12 @@ The Alfresco Content password.
 
   * *cms.type=alfresco*
 The CMS type. Now only alfresco is supported by plugin, then the value of this property will be: `alfresco`.
+
+Now we have finished to install and configure the plugin.
+
+==jar dependencies==
+
+It is possible (I hope not..) to have some problems with the jar dependencies of the plugin. It uses some Alfresco API and some Kettle API and you have to includ all jars into this folder
+                 ../*<kettle root>*/libext
+
+I hope this work. If not, contact me!
