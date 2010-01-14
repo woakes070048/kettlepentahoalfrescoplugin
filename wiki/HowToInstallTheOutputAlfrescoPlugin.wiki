@@ -44,7 +44,9 @@ For example, you may need to build documents into Alfresco that identifies a car
 
 Then let's assume you have defined and configured the Custom Content-Model into Alfresco. (I believe the plugin works with standard content-model too...).
 
-Now, the only file you have to configure is the *plugin.properties*.
+Now you can see the Plugin icon into Kettle Software.
+
+The last action is to configure the *plugin.properties* file.
 
 This file contains some plugin properties regarding the Alfresco repository and the Alfresco Custom Content-Model you want to use:
   * *alfresco.custom.property.doc.content*
