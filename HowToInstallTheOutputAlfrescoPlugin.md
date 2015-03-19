@@ -1,0 +1,92 @@
+# Introduction #
+
+Add your content here.
+
+
+# Details #
+
+Add your content here.  Format your content with:
+  * Text in **bold** or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
+I assume you have the Kettle folder installed on your file system.
+
+## Step 1 - download and install ##
+
+Now, download the **AlfrescoPlugin.tar.gz** archive from this web-site home page and extract it into this folder:
+
+> ../**<kettle root>**/plugins/steps
+
+E.g.: c:/Kettle/plugins/steps
+
+After archive extraction you should have a path like this:
+
+> ../**<kettle root>**/plugins/steps/**AlfrescoPlugin**
+
+and into the AlfrescoPlugin folder you should have these files:
+  * alfrescoicon.png
+  * alfrescoplugin.jar
+  * plugin.properties
+  * plugin.xml
+
+## Step 2 - plugin.properties ##
+
+I developed the plugin in order to be used with an Alfresco Custom Content-Model. As you know well, a custom content-model is a custom entity used build documents with specific metadata.
+For example, you may need to build documents into Alfresco that identifies a car. A car has some specific characteristics and it's very useful to define them as document metadata, specially to be able to perform useful research into Alfresco. Then, if I want to typify a document with some specific metadata, I've to define a Custom Content-Model, as an xml file, with custom properties as:
+  * carModel
+  * carEngine
+  * carColour
+  * ecc...
+
+Then let's assume you have defined and configured the Custom Content-Model into Alfresco. (I believe the plugin works with standard content-model too...).
+
+Now you can see the Plugin icon into Kettle Software.
+
+The last action is to configure the **plugin.properties** file.
+
+This file contains some plugin properties regarding the Alfresco repository and the Alfresco Custom Content-Model you want to use:
+  * **alfresco.custom.property.doc.content**
+This property value is the step input field from which the plugin will read the content to be filled into document objects loaded into Alfresco repository.
+
+  * **alfresco.loading.path**
+This property value is the path of the Alfresco repository Space (folder) into which you want to load the documents.
+
+  * **alfresco.endpoint.address**
+This property value represent the Alfresco API endpoint url; usually **http://localhost:8080/alfresco/api***
+
+  * **alfresco.custom.property.title**
+This property specifies the step input field to be used to fille the Alfresco Document Title metadata.
+
+  * **alfresco.custom.property.primarykey**
+This property specifies the Alfresco custom content-Model metadata to be used to distinguish unequivocally a Document loaded into Alfresco. Indeed, the Alfresco plugin is able to control if a Document already exist into a specified path into Alfresco Repository through the primaryKey property.
+
+  * **alfresco.custom.property.doc.description**
+This property specifies which step input field is to be used as description for Alfresco Document.
+
+  * **alfresco.content.username=admin**
+The alfresco Content username.
+
+  * **alfresco.custom.namespace.url**
+The alfresco Custom Content-Model namespace.
+E.g.: htt://www.mynamespace.it/model/content/1.0
+
+  * **alfresco.custom.content.type=ritrovamento**
+The Alfresco Custom Content-Model name.
+E.g.: car
+
+  * **alfresco.content.password=admin**
+The Alfresco Content password.
+
+  * **cms.type=alfresco**
+The CMS type. Now only alfresco is supported by plugin, then the value of this property will be: `alfresco`.
+
+Now we have finished to install and configure the plugin.
+
+## jar dependencies ##
+
+It is possible (I hope not..) to have some problems with the jar dependencies of the plugin. It uses some Alfresco API and some Kettle API and you have to includ all jars into this folder
+> ../**<kettle root>**/libext
+The main thing is to have included all jars into the Operating System Environment Variable "CLASSPATH".
+
+I hope this work. If not, contact me!
